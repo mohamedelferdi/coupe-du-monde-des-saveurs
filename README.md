@@ -6,7 +6,7 @@ Site web qui organise une compétition entre les gastronomies du monde.
 
 ## Membres du groupe
 - Mohamed El Ferdi
-- Saad
+- Saad Amqor
 - Dylan
 
 ## Technologies
