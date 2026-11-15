@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="La Coupe du Monde des Saveurs : 8 gastronomies s'affrontent pour le titre de meilleure cuisine du monde.">
+    <title>Accueil - La Coupe du Monde des Saveurs</title>
+    <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+    <script src="js/accueil.js" defer></script>
+</head>
+<body>
+
+    <header class="entete">
+        <div class="conteneur entete-contenu">
+            <a href="index.html" class="logo">
+                <img src="img/logo.svg" alt="Logo de la Coupe du Monde des Saveurs" width="48" height="48">
+                <p class="titre-site">La Coupe du Monde <span>des Saveurs</span></p>
+            </a>
+            <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="nav-principale" id="nav-principale">
+                <ul>
+                    <li><a href="index.html" class="actif">Accueil</a></li>
+                    <li><a href="pages/equipes.html">Les équipes</a></li>
+                    <li><a href="pages/competition.html">La compétition</a></li>
+                    <li><a href="pages/vote.html">Voter</a></li>
+                    <li><a href="pages/a-propos.html">À propos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Carrousel -->
+        <div class="carrousel" id="carrousel">
+            <div class="slide slide-1 active">
+                <img src="img/plats/pizza.svg" alt="Illustration d'une pizza napolitaine" width="400" height="300">
+                <div class="slide-texte">
+                    <h2>Bienvenue dans la compétition la plus gourmande !</h2>
+                    <p>8 nations, 8 plats, un seul vainqueur. Qui sera sacré meilleure cuisine du monde ?</p>
+                    <a href="pages/equipes.html" class="bouton">Découvrir les équipes</a>
+                </div>
+            </div>
+            <div class="slide slide-2">
+                <img src="img/plats/tajine.svg" alt="Illustration d'un tajine marocain" width="400" height="300">
+                <div class="slide-texte">
+                    <h2>Les demi-finales approchent</h2>
+                    <p>Italie contre Maroc, Japon contre Thaïlande : les chocs sont lancés.</p>
+                    <a href="pages/competition.html" class="bouton">Voir le tableau</a>
+                </div>
+            </div>
+            <div class="slide slide-3">
+                <img src="img/plats/sushi.svg" alt="Illustration de sushis japonais" width="400" height="300">
+                <div class="slide-texte">
+                    <h2>C'est vous le jury !</h2>
+                    <p>Votez pour votre plat préféré, votre voix compte pour la note finale.</p>
+                    <a href="pages/vote.html" class="bouton">Je vote</a>
+                </div>
+            </div>
+
+            <button class="carrousel-fleche precedent" id="precedent" aria-label="Image précédente">&#10094;</button>
+            <button class="carrousel-fleche suivant" id="suivant" aria-label="Image suivante">&#10095;</button>
+            <div class="points" id="points">
+                <button class="point actif" aria-label="Aller à l'image 1"></button>
+                <button class="point" aria-label="Aller à l'image 2"></button>
+                <button class="point" aria-label="Aller à l'image 3"></button>
+            </div>
+        </div>
+
+        <!-- Compte à rebours -->
+        <section class="rebours">
+            <div class="conteneur">
+                <h2>Grande finale le 20 décembre 2026</h2>
+                <div class="rebours-cases" id="rebours">
+                    <div class="case"><span id="jours">00</span>jours</div>
+                    <div class="case"><span id="heures">00</span>heures</div>
+                    <div class="case"><span id="minutes">00</span>minutes</div>
+                    <div class="case"><span id="secondes">00</span>secondes</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Présentation -->
+        <section>
+            <div class="conteneur">
+                <h1 class="centre">La Coupe du Monde des Saveurs, c'est quoi ?</h1>
+                <p class="centre">
+                    Comme une vraie Coupe du Monde de football, huit pays s'affrontent en matchs à élimination directe.
+                    Mais ici, pas de ballon : chaque équipe défend son plat emblématique devant un jury de chefs
+                    et devant vous, le public. Les notes du jury et vos votes décident qui passe au tour suivant.
+                </p>
+
+                <div class="grille">
+                    <article class="carte apparition">
+                        <p class="icone">🌍</p>
+                        <h3>Les équipes</h3>
+                        <p>Découvrez les 8 nations qualifiées, leur plat signature et la recette pour le refaire chez vous.</p>
+                        <a href="pages/equipes.html">Voir les équipes &rarr;</a>
+                    </article>
+                    <article class="carte apparition">
+                        <p class="icone">🏆</p>
+                        <h3>La compétition</h3>
+                        <p>Calendrier, résultats des quarts de finale et classement complet : suivez toute la compétition.</p>
+                        <a href="pages/competition.html">Voir le tableau &rarr;</a>
+                    </article>
+                    <article class="carte apparition">
+                        <p class="icone">🗳️</p>
+                        <h3>Le vote du public</h3>
+                        <p>Donnez votre avis sur les demi-finalistes et regardez les résultats évoluer en direct.</p>
+                        <a href="pages/vote.html">Aller voter &rarr;</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chiffres clés -->
+        <section class="chiffres">
+            <div class="conteneur">
+                <h2 class="centre">La compétition en chiffres</h2>
+                <div class="chiffres-liste">
+                    <p><span class="chiffre" data-cible="8">0</span>nations</p>
+                    <p><span class="chiffre" data-cible="4">0</span>continents</p>
+                    <p><span class="chiffre" data-cible="12">0</span>chefs au jury</p>
+                    <p><span class="chiffre" data-cible="7">0</span>matchs au total</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dernier résultat -->
+        <section>
+            <div class="conteneur centre">
+                <h2>Dernier résultat</h2>
+                <p>
+                    En quart de finale, le <strong>tajine du Maroc</strong> a battu le <strong>bœuf bourguignon de la France</strong>
+                    avec une note de 18 contre 17,5. Une vraie surprise !
+                </p>
+                <img src="img/plats/tajine.svg" alt="Le tajine marocain, vainqueur surprise" width="400" height="300" class="image-resultat rebond">
+                <a href="pages/competition.html" class="bouton bouton-vert">Tous les résultats</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pied">
+        <div class="conteneur">
+            <nav aria-label="Navigation du bas de page">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="pages/equipes.html">Les équipes</a></li>
+                    <li><a href="pages/competition.html">La compétition</a></li>
+                    <li><a href="pages/vote.html">Voter</a></li>
+                    <li><a href="pages/a-propos.html">À propos</a></li>
+                </ul>
+            </nav>
+            <p>&copy; 2026 La Coupe du Monde des Saveurs - Projet Web TI504N - EFREI Paris</p>
+        </div>
+    </footer>
+
+    <button class="haut" id="haut" aria-label="Revenir en haut de la page">&uarr;</button>
+
+</body>
+</html>
