@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Votez pour votre plat préféré parmi les demi-finalistes.">
+    <title>Voter - La Coupe du Monde des Saveurs</title>
+    <link rel="icon" href="../img/logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/main.js" defer></script>
+    <script src="../js/vote.js" defer></script>
+</head>
+<body>
+
+    <header class="entete">
+        <div class="conteneur entete-contenu">
+            <a href="../index.html" class="logo">
+                <img src="../img/logo.svg" alt="Logo de la Coupe du Monde des Saveurs" width="48" height="48">
+                <p class="titre-site">La Coupe du Monde <span>des Saveurs</span></p>
+            </a>
+            <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="nav-principale" id="nav-principale">
+                <ul>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="equipes.html">Les équipes</a></li>
+                    <li><a href="competition.html">La compétition</a></li>
+                    <li><a href="vote.html" class="actif">Voter</a></li>
+                    <li><a href="a-propos.html">À propos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="banniere">
+            <div class="conteneur">
+                <h1>Le vote du public</h1>
+                <p>Votre vote compte pour 30 % de la note des demi-finales. Un seul vote par personne !</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="conteneur">
+                <form class="formulaire" id="form-vote" novalidate>
+                    <h2>Mon vote</h2>
+
+                    <div class="champ">
+                        <label for="pseudo">Pseudo</label>
+                        <input type="text" id="pseudo" name="pseudo" placeholder="Ex : Gourmand75">
+                        <p class="message-erreur" id="erreur-pseudo"></p>
+                    </div>
+
+                    <div class="champ">
+                        <label for="plat">Votre plat préféré</label>
+                        <select id="plat" name="plat">
+                            <option value="">-- Choisir un plat --</option>
+                            <option value="italie">Italie - Pizza napolitaine</option>
+                            <option value="maroc">Maroc - Tajine de poulet</option>
+                            <option value="japon">Japon - Sushis</option>
+                            <option value="thailande">Thaïlande - Pad thaï</option>
+                        </select>
+                        <p class="message-erreur" id="erreur-plat"></p>
+                    </div>
+
+                    <fieldset class="champ">
+                        <legend>Avez-vous déjà goûté ce plat ?</legend>
+                        <label class="choix"><input type="radio" name="goute" value="oui"> Oui</label>
+                        <label class="choix"><input type="radio" name="goute" value="non"> Non</label>
+                        <p class="message-erreur" id="erreur-goute"></p>
+                    </fieldset>
+
+                    <div class="champ">
+                        <p class="label-etoiles"><strong>Votre note</strong></p>
+                        <div class="etoiles" id="etoiles">
+                            <button type="button" class="etoile" data-valeur="1" aria-label="1 étoile">&#9733;</button>
+                            <button type="button" class="etoile" data-valeur="2" aria-label="2 étoiles">&#9733;</button>
+                            <button type="button" class="etoile" data-valeur="3" aria-label="3 étoiles">&#9733;</button>
+                            <button type="button" class="etoile" data-valeur="4" aria-label="4 étoiles">&#9733;</button>
+                            <button type="button" class="etoile" data-valeur="5" aria-label="5 étoiles">&#9733;</button>
+                        </div>
+                        <p class="message-erreur" id="erreur-note"></p>
+                    </div>
+
+                    <div class="champ">
+                        <label class="choix"><input type="checkbox" id="reglement" name="reglement"> J'accepte le règlement du vote</label>
+                        <p class="message-erreur" id="erreur-reglement"></p>
+                    </div>
+
+                    <button type="submit" class="bouton bouton-vert">Envoyer mon vote</button>
+                    <div class="message-succes" id="succes-vote"></div>
+                </form>
+
+                <div class="resultats">
+                    <h2 class="centre">Résultats en direct</h2>
+                    <p class="centre" id="total-votes">0 vote</p>
+                    <div id="barres"></div>
+                    <p class="centre"><button type="button" class="bouton" id="reinitialiser">Réinitialiser mon vote</button></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pied">
+        <div class="conteneur">
+            <nav aria-label="Navigation du bas de page">
+                <ul>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="equipes.html">Les équipes</a></li>
+                    <li><a href="competition.html">La compétition</a></li>
+                    <li><a href="vote.html">Voter</a></li>
+                    <li><a href="a-propos.html">À propos</a></li>
+                </ul>
+            </nav>
+            <p>&copy; 2026 La Coupe du Monde des Saveurs - Projet Web TI504N - EFREI Paris</p>
+        </div>
+    </footer>
+
+    <button class="haut" id="haut" aria-label="Revenir en haut de la page">&uarr;</button>
+
+</body>
+</html>
