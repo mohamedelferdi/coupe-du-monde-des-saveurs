@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Calendrier, résultats et classement de la Coupe du Monde des Saveurs.">
+    <title>La compétition - La Coupe du Monde des Saveurs</title>
+    <link rel="icon" href="../img/logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/main.js" defer></script>
+    <script src="../js/competition.js" defer></script>
+</head>
+<body>
+
+    <header class="entete">
+        <div class="conteneur entete-contenu">
+            <a href="../index.html" class="logo">
+                <img src="../img/logo.svg" alt="Logo de la Coupe du Monde des Saveurs" width="48" height="48">
+                <p class="titre-site">La Coupe du Monde <span>des Saveurs</span></p>
+            </a>
+            <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="nav-principale" id="nav-principale">
+                <ul>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="equipes.html">Les équipes</a></li>
+                    <li><a href="competition.html" class="actif">La compétition</a></li>
+                    <li><a href="vote.html">Voter</a></li>
+                    <li><a href="a-propos.html">À propos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="banniere">
+            <div class="conteneur">
+                <h1>La compétition</h1>
+                <p>Quarts de finale, demi-finales et grande finale : tout le parcours des équipes.</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="conteneur">
+                <h2>Le règlement</h2>
+                <p>
+                    Chaque match oppose deux nations. Les deux équipes cuisinent leur plat devant un jury de 12 chefs
+                    qui donne une note sur 20 (goût, présentation, originalité). La meilleure note se qualifie pour le tour suivant.
+                    À partir des demi-finales, le vote du public compte pour 30 % de la note finale.
+                </p>
+
+                <h2>Le tableau final</h2>
+                <div class="tableau-final">
+                    <div class="tour">
+                        <h3>Quarts de finale</h3>
+                        <div class="match">
+                            <p class="date">14 novembre 2026</p>
+                            <p><span class="gagnant">Italie</span><span>17,5</span></p>
+                            <p><span>Pérou</span><span>16</span></p>
+                        </div>
+                        <div class="match">
+                            <p class="date">14 novembre 2026</p>
+                            <p><span class="gagnant">Maroc</span><span>18</span></p>
+                            <p><span>France</span><span>17,5</span></p>
+                        </div>
+                        <div class="match">
+                            <p class="date">15 novembre 2026</p>
+                            <p><span class="gagnant">Japon</span><span>18,5</span></p>
+                            <p><span>Nigeria</span><span>16,5</span></p>
+                        </div>
+                        <div class="match">
+                            <p class="date">15 novembre 2026</p>
+                            <p><span class="gagnant">Thaïlande</span><span>17,5</span></p>
+                            <p><span>Inde</span><span>17</span></p>
+                        </div>
+                    </div>
+                    <div class="tour">
+                        <h3>Demi-finales</h3>
+                        <div class="match">
+                            <p class="date">5 décembre 2026</p>
+                            <p><span>Italie</span><span>-</span></p>
+                            <p><span>Maroc</span><span>-</span></p>
+                        </div>
+                        <div class="match">
+                            <p class="date">6 décembre 2026</p>
+                            <p><span>Japon</span><span>-</span></p>
+                            <p><span>Thaïlande</span><span>-</span></p>
+                        </div>
+                    </div>
+                    <div class="tour">
+                        <h3>Finale</h3>
+                        <div class="match">
+                            <p class="date">20 décembre 2026</p>
+                            <p><span>Vainqueur demi 1</span><span>-</span></p>
+                            <p><span>Vainqueur demi 2</span><span>-</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="conteneur">
+                <h2>Le calendrier</h2>
+                <div class="tableau-conteneur">
+                    <table>
+                        <caption>Programme des matchs</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Date</th>
+                                <th scope="col">Phase</th>
+                                <th scope="col">Match</th>
+                                <th scope="col">Lieu</th>
+                                <th scope="col">Statut</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>14/11/2026</td><td>Quart 1</td><td>Italie - Pérou</td><td>Lyon</td><td>Terminé</td></tr>
+                            <tr><td>14/11/2026</td><td>Quart 2</td><td>Maroc - France</td><td>Lyon</td><td>Terminé</td></tr>
+                            <tr><td>15/11/2026</td><td>Quart 3</td><td>Japon - Nigeria</td><td>Marseille</td><td>Terminé</td></tr>
+                            <tr><td>15/11/2026</td><td>Quart 4</td><td>Thaïlande - Inde</td><td>Marseille</td><td>Terminé</td></tr>
+                            <tr><td>05/12/2026</td><td>Demi 1</td><td>Italie - Maroc</td><td>Bordeaux</td><td>À venir</td></tr>
+                            <tr><td>06/12/2026</td><td>Demi 2</td><td>Japon - Thaïlande</td><td>Bordeaux</td><td>À venir</td></tr>
+                            <tr><td>20/12/2026</td><td>Finale</td><td>À déterminer</td><td>Paris</td><td>À venir</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="conteneur">
+                <h2>Le classement général</h2>
+                <p>Cliquez sur le titre d'une colonne pour trier le tableau.</p>
+                <div class="tableau-conteneur">
+                    <table id="classement">
+                        <caption>Classement après les quarts de finale</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col" class="triable" data-colonne="0" data-type="nombre">Rang &#8645;</th>
+                                <th scope="col" class="triable" data-colonne="1" data-type="texte">Nation &#8645;</th>
+                                <th scope="col" class="triable" data-colonne="2" data-type="texte">Continent &#8645;</th>
+                                <th scope="col">Plat</th>
+                                <th scope="col" class="triable" data-colonne="4" data-type="nombre">Note du jury &#8645;</th>
+                                <th scope="col" class="triable" data-colonne="5" data-type="nombre">Votes du public &#8645;</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td><img src="../img/drapeaux/japon.svg" alt="" class="drapeau-mini" width="300" height="200">Japon</td>
+                                <td>Asie</td>
+                                <td>Sushis</td>
+                                <td>18,5</td>
+                                <td>412</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td><img src="../img/drapeaux/maroc.svg" alt="" class="drapeau-mini" width="300" height="200">Maroc</td>
+                                <td>Afrique</td>
+                                <td>Tajine de poulet</td>
+                                <td>18</td>
+                                <td>389</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td><img src="../img/drapeaux/thailande.svg" alt="" class="drapeau-mini" width="300" height="200">Thaïlande</td>
+                                <td>Asie</td>
+                                <td>Pad thaï</td>
+                                <td>17,5</td>
+                                <td>301</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td><img src="../img/drapeaux/france.svg" alt="" class="drapeau-mini" width="300" height="200">France</td>
+                                <td>Europe</td>
+                                <td>Bœuf bourguignon</td>
+                                <td>17,5</td>
+                                <td>356</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td><img src="../img/drapeaux/italie.svg" alt="" class="drapeau-mini" width="300" height="200">Italie</td>
+                                <td>Europe</td>
+                                <td>Pizza napolitaine</td>
+                                <td>17,5</td>
+                                <td>398</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td><img src="../img/drapeaux/inde.svg" alt="" class="drapeau-mini" width="300" height="200">Inde</td>
+                                <td>Asie</td>
+                                <td>Butter chicken</td>
+                                <td>17</td>
+                                <td>274</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td><img src="../img/drapeaux/nigeria.svg" alt="" class="drapeau-mini" width="300" height="200">Nigeria</td>
+                                <td>Afrique</td>
+                                <td>Jollof rice</td>
+                                <td>16,5</td>
+                                <td>215</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td><img src="../img/drapeaux/perou.svg" alt="" class="drapeau-mini" width="300" height="200">Pérou</td>
+                                <td>Amérique</td>
+                                <td>Ceviche</td>
+                                <td>16</td>
+                                <td>187</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pied">
+        <div class="conteneur">
+            <nav aria-label="Navigation du bas de page">
+                <ul>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="equipes.html">Les équipes</a></li>
+                    <li><a href="competition.html">La compétition</a></li>
+                    <li><a href="vote.html">Voter</a></li>
+                    <li><a href="a-propos.html">À propos</a></li>
+                </ul>
+            </nav>
+            <p>&copy; 2026 La Coupe du Monde des Saveurs - Projet Web TI504N - EFREI Paris</p>
+        </div>
+    </footer>
+
+    <button class="haut" id="haut" aria-label="Revenir en haut de la page">&uarr;</button>
+
+</body>
+</html>
