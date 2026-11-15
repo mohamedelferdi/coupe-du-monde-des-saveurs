@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Les 8 nations qualifiées pour la Coupe du Monde des Saveurs et leurs plats.">
+    <title>Les équipes - La Coupe du Monde des Saveurs</title>
+    <link rel="icon" href="../img/logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/main.js" defer></script>
+    <script src="../js/equipes.js" defer></script>
+</head>
+<body>
+
+    <header class="entete">
+        <div class="conteneur entete-contenu">
+            <a href="../index.html" class="logo">
+                <img src="../img/logo.svg" alt="Logo de la Coupe du Monde des Saveurs" width="48" height="48">
+                <p class="titre-site">La Coupe du Monde <span>des Saveurs</span></p>
+            </a>
+            <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="nav-principale" id="nav-principale">
+                <ul>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="equipes.html" class="actif">Les équipes</a></li>
+                    <li><a href="competition.html">La compétition</a></li>
+                    <li><a href="vote.html">Voter</a></li>
+                    <li><a href="a-propos.html">À propos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="banniere">
+            <div class="conteneur">
+                <h1>Les 8 équipes qualifiées</h1>
+                <p>Chaque nation défend un plat qui représente sa culture. Filtrez par continent et découvrez les recettes !</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="conteneur">
+                <div class="filtres" id="filtres">
+                    <button class="filtre actif" data-continent="tous">Tous</button>
+                    <button class="filtre" data-continent="europe">Europe</button>
+                    <button class="filtre" data-continent="afrique">Afrique</button>
+                    <button class="filtre" data-continent="asie">Asie</button>
+                    <button class="filtre" data-continent="amerique">Amérique</button>
+                </div>
+                <p class="centre" id="nombre-equipes">8 équipes affichées</p>
+
+                <div class="grille">
+                    <article class="equipe apparition" data-continent="europe">
+                        <img src="../img/plats/bourguignon.svg" alt="Illustration : le bœuf bourguignon" width="400" height="300">
+                        <div class="equipe-contenu">
+                            <div class="equipe-titre">
+                                <img src="../img/drapeaux/france.svg" alt="Drapeau : France" width="300" height="200">
+                                <h2>France</h2>
+                            </div>
+                            <p class="continent">Europe</p>
+                            <h3>Le bœuf bourguignon</h3>
+                            <p>Plat mijoté de Bourgogne : du bœuf cuit longtemps dans du vin rouge avec des carottes, des oignons, des champignons et des lardons.</p>
+                            <button class="bouton bouton-recette" aria-expanded="false">Voir la recette</button>
+                            <div class="recette">
+                                <h4>Ingrédients</h4>
+                                <ul>
+                                <li>1 kg de bœuf (paleron)</li>
+                                <li>75 cl de vin rouge de Bourgogne</li>
+                                <li>200 g de lardons</li>
+                                <li>250 g de champignons</li>
+                                <li>2 carottes, 2 oignons, 1 bouquet garni</li>
+                                </ul>
+                                <h4>Préparation</h4>
+                                <ol>
+                                <li>Faire mariner la viande dans le vin une nuit.</li>
+                                <li>Faire dorer la viande et les lardons dans une cocotte.</li>
+                                <li>Ajouter les légumes, le vin et le bouquet garni.</li>
+                                <li>Laisser mijoter 3 heures à feu doux, ajouter les champignons 30 minutes avant la fin.</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="equipe apparition" data-continent="europe">
+                        <img src="../img/plats/pizza.svg" alt="Illustration : la pizza napolitaine" width="400" height="300">
+                        <div class="equipe-contenu">
+                            <div class="equipe-titre">
+                                <img src="../img/drapeaux/italie.svg" alt="Drapeau : Italie" width="300" height="200">
+                                <h2>Italie</h2>
+                            </div>
+                            <p class="continent">Europe</p>
+                            <h3>La pizza napolitaine</h3>
+                            <p>Née à Naples, la vraie pizza a une pâte fine et moelleuse, cuite au feu de bois avec tomate, mozzarella et basilic.</p>
+                            <button class="bouton bouton-recette" aria-expanded="false">Voir la recette</button>
+                            <div class="recette">
+                                <h4>Ingrédients</h4>
+                                <ul>
+                                <li>500 g de farine</li>
+                                <li>300 ml d'eau, 10 g de sel, 3 g de levure</li>
+                                <li>400 g de tomates pelées</li>
+                                <li>250 g de mozzarella</li>
+                                <li>Basilic frais, huile d'olive</li>
+                                </ul>
+                                <h4>Préparation</h4>
+                                <ol>
+                                <li>Pétrir la pâte et la laisser lever au moins 8 heures.</li>
+                                <li>Étaler des boules de pâte à la main.</li>
+                                <li>Garnir de sauce tomate, mozzarella et basilic.</li>
+                                <li>Cuire au four le plus chaud possible pendant 5 à 8 minutes.</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="equipe apparition" data-continent="afrique">
+                        <img src="../img/plats/tajine.svg" alt="Illustration : le tajine de poulet" width="400" height="300">
+                        <div class="equipe-contenu">
+                            <div class="equipe-titre">
+                                <img src="../img/drapeaux/maroc.svg" alt="Drapeau : Maroc" width="300" height="200">
+                                <h2>Maroc</h2>
+                            </div>
+                            <p class="continent">Afrique</p>
+                            <h3>Le tajine de poulet</h3>
+                            <p>Cuit lentement dans un plat en terre au couvercle conique, le tajine mélange poulet, citron confit, olives et épices.</p>
+                            <button class="bouton bouton-recette" aria-expanded="false">Voir la recette</button>
+                            <div class="recette">
+                                <h4>Ingrédients</h4>
+                                <ul>
+                                <li>1 poulet en morceaux</li>
+                                <li>2 citrons confits</li>
+                                <li>1 poignée d'olives vertes</li>
+                                <li>2 oignons, ail, coriandre</li>
+                                <li>Gingembre, curcuma, safran</li>
+                                </ul>
+                                <h4>Préparation</h4>
+                                <ol>
+                                <li>Faire mariner le poulet avec les épices, l'ail et l'huile.</li>
+                                <li>Faire revenir les oignons dans le tajine.</li>
+                                <li>Ajouter le poulet et un verre d'eau, couvrir.</li>
+                                <li>Cuire 1 h 30 à feu doux puis ajouter citrons et olives.</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="equipe apparition" data-continent="afrique">
+                        <img src="../img/plats/jollof.svg" alt="Illustration : le jollof rice" width="400" height="300">
+                        <div class="equipe-contenu">
+                            <div class="equipe-titre">
+                                <img src="../img/drapeaux/nigeria.svg" alt="Drapeau : Nigeria" width="300" height="200">
+                                <h2>Nigeria</h2>
+                            </div>
+                            <p class="continent">Afrique</p>
+                            <h3>Le jollof rice</h3>
+                            <p>Plat star d'Afrique de l'Ouest : un riz cuit dans une sauce tomate pimentée, souvent servi avec du poulet ou des bananes plantain.</p>
+                            <button class="bouton bouton-recette" aria-expanded="false">Voir la recette</button>
+                            <div class="recette">
+                                <h4>Ingrédients</h4>
+                                <ul>
+                                <li>400 g de riz long</li>
+                                <li>4 tomates, 2 poivrons rouges</li>
+                                <li>1 piment, 2 oignons</li>
+                                <li>Concentré de tomate, thym, curry</li>
+                                <li>Bouillon de volaille</li>
+                                </ul>
+                                <h4>Préparation</h4>
+                                <ol>
+                                <li>Mixer tomates, poivrons, piment et un oignon.</li>
+                                <li>Faire revenir l'autre oignon et le concentré de tomate.</li>
+                                <li>Ajouter la sauce mixée et laisser réduire 20 minutes.</li>
+                                <li>Ajouter le riz et le bouillon, cuire à couvert jusqu'à absorption.</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="equipe apparition" data-continent="asie">
+                        <img src="../img/plats/sushi.svg" alt="Illustration : les sushis" width="400" height="300">
+                        <div class="equipe-contenu">
+                            <div class="equipe-titre">
+                                <img src="../img/drapeaux/japon.svg" alt="Drapeau : Japon" width="300" height="200">
+                                <h2>Japon</h2>
+                            </div>
+                            <p class="continent">Asie</p>
+                            <h3>Les sushis</h3>
+                            <p>Du riz vinaigré associé à du poisson cru très frais : un plat simple en apparence mais qui demande des années de pratique.</p>
+                            <button class="bouton bouton-recette" aria-expanded="false">Voir la recette</button>
+                            <div class="recette">
+                                <h4>Ingrédients</h4>
+                                <ul>
+                                <li>300 g de riz rond japonais</li>
+                                <li>Vinaigre de riz, sucre, sel</li>
+                                <li>200 g de saumon ou thon très frais</li>
+                                <li>Feuilles d'algue nori</li>
+                                <li>Sauce soja, wasabi, gingembre</li>
+                                </ul>
+                                <h4>Préparation</h4>
+                                <ol>
+                                <li>Laver et cuire le riz puis l'assaisonner avec le vinaigre.</li>
+                                <li>Laisser refroidir le riz à température ambiante.</li>
+                                <li>Couper le poisson en tranches fines.</li>
+                                <li>Former des petites boules de riz et poser le poisson dessus.</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="equipe apparition" data-continent="asie">
+                        <img src="../img/plats/curry.svg" alt="Illustration : le butter chicken" width="400" height="300">
+                        <div class="equipe-contenu">
+                            <div class="equipe-titre">
+                                <img src="../img/drapeaux/inde.svg" alt="Drapeau : Inde" width="300" height="200">
+                                <h2>Inde</h2>
+                            </div>
+                            <p class="continent">Asie</p>
+                            <h3>Le butter chicken</h3>
+                            <p>Poulet mariné au yaourt et aux épices, cuit dans une sauce tomate crémeuse au beurre. Un classique de New Delhi.</p>
+                            <button class="bouton bouton-recette" aria-expanded="false">Voir la recette</button>
+                            <div class="recette">
+                                <h4>Ingrédients</h4>
+                                <ul>
+                                <li>600 g de blanc de poulet</li>
+                                <li>1 yaourt nature</li>
+                                <li>400 g de coulis de tomate</li>
+                                <li>50 g de beurre, 20 cl de crème</li>
+                                <li>Garam masala, cumin, ail, gingembre</li>
+                                </ul>
+                                <h4>Préparation</h4>
+                                <ol>
+                                <li>Faire mariner le poulet dans le yaourt et les épices 2 heures.</li>
+                                <li>Faire griller le poulet à la poêle.</li>
+                                <li>Préparer la sauce avec le beurre, les tomates et les épices.</li>
+                                <li>Ajouter la crème puis le poulet, laisser mijoter 15 minutes.</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="equipe apparition" data-continent="asie">
+                        <img src="../img/plats/padthai.svg" alt="Illustration : le pad thaï" width="400" height="300">
+                        <div class="equipe-contenu">
+                            <div class="equipe-titre">
+                                <img src="../img/drapeaux/thailande.svg" alt="Drapeau : Thaïlande" width="300" height="200">
+                                <h2>Thaïlande</h2>
+                            </div>
+                            <p class="continent">Asie</p>
+                            <h3>Le pad thaï</h3>
+                            <p>Nouilles de riz sautées au wok avec crevettes, œuf, pousses de soja et cacahuètes, dans une sauce sucrée-salée au tamarin.</p>
+                            <button class="bouton bouton-recette" aria-expanded="false">Voir la recette</button>
+                            <div class="recette">
+                                <h4>Ingrédients</h4>
+                                <ul>
+                                <li>200 g de nouilles de riz</li>
+                                <li>200 g de crevettes</li>
+                                <li>2 œufs, pousses de soja</li>
+                                <li>Sauce tamarin, sauce poisson, sucre</li>
+                                <li>Cacahuètes, citron vert</li>
+                                </ul>
+                                <h4>Préparation</h4>
+                                <ol>
+                                <li>Faire tremper les nouilles dans l'eau chaude.</li>
+                                <li>Faire sauter les crevettes au wok puis les œufs.</li>
+                                <li>Ajouter les nouilles et la sauce, bien mélanger.</li>
+                                <li>Servir avec soja, cacahuètes et un quartier de citron vert.</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="equipe apparition" data-continent="amerique">
+                        <img src="../img/plats/ceviche.svg" alt="Illustration : le ceviche" width="400" height="300">
+                        <div class="equipe-contenu">
+                            <div class="equipe-titre">
+                                <img src="../img/drapeaux/perou.svg" alt="Drapeau : Pérou" width="300" height="200">
+                                <h2>Pérou</h2>
+                            </div>
+                            <p class="continent">Amérique</p>
+                            <h3>Le ceviche</h3>
+                            <p>Poisson cru « cuit » dans du jus de citron vert, avec oignon rouge, piment et coriandre. Frais et acidulé.</p>
+                            <button class="bouton bouton-recette" aria-expanded="false">Voir la recette</button>
+                            <div class="recette">
+                                <h4>Ingrédients</h4>
+                                <ul>
+                                <li>500 g de poisson blanc très frais</li>
+                                <li>8 citrons verts</li>
+                                <li>1 oignon rouge</li>
+                                <li>1 piment, coriandre</li>
+                                <li>Patate douce et maïs pour servir</li>
+                                </ul>
+                                <h4>Préparation</h4>
+                                <ol>
+                                <li>Couper le poisson en cubes.</li>
+                                <li>Ajouter le jus des citrons verts et le sel.</li>
+                                <li>Laisser reposer 10 minutes au frais.</li>
+                                <li>Ajouter oignon, piment et coriandre puis servir tout de suite.</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pied">
+        <div class="conteneur">
+            <nav aria-label="Navigation du bas de page">
+                <ul>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="equipes.html">Les équipes</a></li>
+                    <li><a href="competition.html">La compétition</a></li>
+                    <li><a href="vote.html">Voter</a></li>
+                    <li><a href="a-propos.html">À propos</a></li>
+                </ul>
+            </nav>
+            <p>&copy; 2026 La Coupe du Monde des Saveurs - Projet Web TI504N - EFREI Paris</p>
+        </div>
+    </footer>
+
+    <button class="haut" id="haut" aria-label="Revenir en haut de la page">&uarr;</button>
+
+</body>
+</html>
