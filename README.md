@@ -17,3 +17,17 @@ HTML5, CSS3, JavaScript (sans framework ni bibliothèque)
 
 ## Lancer le site
 Ouvrir le dossier dans VS Code puis lancer index.html avec Live Server.
+
+## Arborescence
+```
+index.html            page d'accueil
+pages/
+  equipes.html        les 8 équipes et leurs recettes
+  competition.html    tableau final, calendrier, classement
+  vote.html           vote du public
+  a-propos.html       l'équipe du projet + contact
+css/style.css         feuille de style (responsive)
+js/                   un script commun (main.js) + un script par page
+img/                  logo, drapeaux et plats (SVG)
+maquette/             wireframes et charte graphique
+```
