@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="L'équipe du projet La Coupe du Monde des Saveurs et formulaire de contact.">
+    <title>À propos - La Coupe du Monde des Saveurs</title>
+    <link rel="icon" href="../img/logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/main.js" defer></script>
+    <script src="../js/contact.js" defer></script>
+</head>
+<body>
+
+    <header class="entete">
+        <div class="conteneur entete-contenu">
+            <a href="../index.html" class="logo">
+                <img src="../img/logo.svg" alt="Logo de la Coupe du Monde des Saveurs" width="48" height="48">
+                <p class="titre-site">La Coupe du Monde <span>des Saveurs</span></p>
+            </a>
+            <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="nav-principale" id="nav-principale">
+                <ul>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="equipes.html">Les équipes</a></li>
+                    <li><a href="competition.html">La compétition</a></li>
+                    <li><a href="vote.html">Voter</a></li>
+                    <li><a href="a-propos.html" class="actif">À propos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="banniere">
+            <div class="conteneur">
+                <h1>À propos du projet</h1>
+                <p>Projet de programmation Web TI504N - EFREI Paris - 2026/2027</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="conteneur">
+                <h2>Le projet</h2>
+                <p>
+                    La Coupe du Monde des Saveurs est un site réalisé dans le cadre du cours de programmation Web.
+                    L'idée était de mélanger deux choses que tout le monde aime : le football et la cuisine.
+                    Le site est fait uniquement en HTML5, CSS3 et JavaScript, sans framework ni bibliothèque.
+                    Toutes les images (drapeaux, plats, logo) sont des fichiers SVG que nous avons faits nous-mêmes.
+                </p>
+
+                <h2>L'équipe</h2>
+                <div class="grille">
+                    <article class="carte membre apparition">
+                        <p class="avatar">ME</p>
+                        <h3>Mohamed El Ferdi</h3>
+                        <ul>
+                            <li>Page d'accueil (carrousel, compte à rebours, compteurs)</li>
+                            <li>Header, footer et menu burger communs</li>
+                            <li>Charte graphique et feuille de style</li>
+                        </ul>
+                    </article>
+                    <article class="carte membre apparition">
+                        <p class="avatar">DA</p>
+                        <h3>Dylan Assaf</h3>
+                        <ul>
+                            <li>Page des équipes (cartes, filtre par continent, recettes)</li>
+                            <li>Images SVG des plats et des drapeaux</li>
+                            <li>Design responsive (media queries)</li>
+                        </ul>
+                    </article>
+                    <article class="carte membre apparition">
+                        <p class="avatar">SA</p>
+                        <h3>Saad Amqor</h3>
+                        <ul>
+                            <li>Page compétition (tableaux, tri du classement)</li>
+                            <li>Page de vote (formulaire, résultats en direct)</li>
+                            <li>Formulaire de contact et validation W3C</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="conteneur">
+                <h2>À savoir</h2>
+                <ul class="liste-infos">
+                    <li>La compétition et les résultats sont fictifs, ils ont été inventés pour le projet.</li>
+                    <li>Les votes sont enregistrés dans le navigateur (localStorage), ils ne sont pas envoyés sur un serveur.</li>
+                    <li>Le projet a été géré avec Git et GitHub, et organisé avec un tableau Trello.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div class="conteneur">
+                <form class="formulaire" id="form-contact" novalidate>
+                    <h2>Nous contacter</h2>
+
+                    <div class="champ">
+                        <label for="nom">Nom</label>
+                        <input type="text" id="nom" name="nom">
+                        <p class="message-erreur" id="erreur-nom"></p>
+                    </div>
+
+                    <div class="champ">
+                        <label for="email">Adresse e-mail</label>
+                        <input type="email" id="email" name="email" placeholder="exemple@mail.com">
+                        <p class="message-erreur" id="erreur-email"></p>
+                    </div>
+
+                    <div class="champ">
+                        <label for="sujet">Sujet</label>
+                        <select id="sujet" name="sujet">
+                            <option value="">-- Choisir un sujet --</option>
+                            <option value="question">Une question</option>
+                            <option value="pays">Proposer un pays</option>
+                            <option value="bug">Signaler un problème</option>
+                        </select>
+                        <p class="message-erreur" id="erreur-sujet"></p>
+                    </div>
+
+                    <div class="champ">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" maxlength="500"></textarea>
+                        <p class="compteur" id="compteur">0 / 500</p>
+                        <p class="message-erreur" id="erreur-message"></p>
+                    </div>
+
+                    <button type="submit" class="bouton bouton-vert">Envoyer</button>
+                    <div class="message-succes" id="succes-contact"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pied">
+        <div class="conteneur">
+            <nav aria-label="Navigation du bas de page">
+                <ul>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="equipes.html">Les équipes</a></li>
+                    <li><a href="competition.html">La compétition</a></li>
+                    <li><a href="vote.html">Voter</a></li>
+                    <li><a href="a-propos.html">À propos</a></li>
+                </ul>
+            </nav>
+            <p>&copy; 2026 La Coupe du Monde des Saveurs - Projet Web TI504N - EFREI Paris</p>
+        </div>
+    </footer>
+
+    <button class="haut" id="haut" aria-label="Revenir en haut de la page">&uarr;</button>
+
+</body>
+</html>
