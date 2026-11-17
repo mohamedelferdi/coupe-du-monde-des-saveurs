@@ -835,9 +835,7 @@ fieldset.champ {
     animation: rebond 2s infinite;
 }
 
-/* =========================================================
-   Responsive
-   ========================================================= */
+
 
 /* tablette */
 @media screen and (max-width: 900px) {
